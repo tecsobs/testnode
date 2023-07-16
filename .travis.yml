@@ -1,0 +1,7 @@
+sudo: required
+services:
+  - docker
+
+script:
+  - docker build -t tecsobs/node .
+  - docker images tecsobs/node
