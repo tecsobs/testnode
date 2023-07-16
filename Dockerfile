@@ -1,9 +1,9 @@
 FROM node:18-alpine
 
-RUN mkdir /usr/src/app
-WORKDIR /usr/src/app
+RUN mkdir /app
+WORKDIR /app
 
-ENV PATH /usr/src/app/node_modules/.bin:$PATH
+ENV PATH /node_modules/.bin:$PATH
 
 COPY package*.json /
 
